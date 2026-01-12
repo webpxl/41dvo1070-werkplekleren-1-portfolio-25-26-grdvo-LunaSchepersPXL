@@ -86,27 +86,15 @@ if (skillsSection) {
     skillObserver.observe(skillsSection);
 }
 
-// Contact form submission
+// Contact form submission (Netlify compatible)
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // Get form data
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
-            message: document.getElementById('message').value
-        };
-
-        // Show success message (in a real application, you would send this to a server)
+    contactForm.addEventListener('submit', () => {
         alert('Bedankt voor je bericht! Ik neem zo snel mogelijk contact met je op.');
-
-        // Reset form
-        contactForm.reset();
+        // GEEN preventDefault() hier — Netlify moet het formulier versturen
     });
 }
+
 
 // Add scroll reveal animation to sections
 const revealSections = document.querySelectorAll('.section');
