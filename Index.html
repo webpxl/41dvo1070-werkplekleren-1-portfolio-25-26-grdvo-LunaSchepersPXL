@@ -1,15 +1,397 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Design & Development</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<p>
-    Lunaa
-</p>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">Portfolio</div>
+        <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">Over Mij</a></li>
+            <li><a href="#projects" class="nav-link">Projecten</a></li>
+            <li><a href="#skills" class="nav-link">Vaardigheden</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Hallo, ik ben <span class="highlight">Jane Doe</span></h1>
+        <p class="hero-subtitle">Designer & Developer</p>
+        <p class="hero-description">
+            Ik creëer prachtige en functionele digitale ervaringen met een focus op gebruiksvriendelijkheid en visuele impact
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Bekijk Mijn Werk</a>
+            <a href="#contact" class="btn btn-secondary">Neem Contact Op</a>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Over Mij</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <!-- Introduction -->
+        <div class="about-intro">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" alt="Profile">
+            </div>
+            <div class="about-text">
+                <h3>Korte voorstelling</h3>
+                <p>
+                    Hallo! Ik ben Jane Doe, een gepassioneerde designer en developer met een sterke focus op het creëren
+                    van visueel aantrekkelijke en gebruiksvriendelijke digitale oplossingen. Mijn reis in de wereld van
+                    design en technologie begon met een diepe fascinatie voor hoe goede vormgeving het verschil kan maken
+                    in de gebruikerservaring.
+                </p>
+                <p>
+                    In mijn vrije tijd vind je mij op het volleybalveld of genietend van muziek. Deze hobby's helpen mij
+                    om creatief en geïnspireerd te blijven in mijn werk.
+                </p>
+            </div>
+        </div>
+
+        <!-- Why This Study -->
+        <div class="about-card">
+            <div class="card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+            </div>
+            <h3>Waarom koos ik voor deze opleiding?</h3>
+            <p>
+                Ik koos voor deze opleiding omdat ik gefascineerd ben door de kracht van design om problemen op te lossen
+                en positieve gebruikerservaringen te creëren. De combinatie van creativiteit en technologie spreekt mij
+                enorm aan. Ik wilde leren hoe ik mijn artistieke visie kon vertalen naar digitale producten die niet alleen
+                mooi zijn, maar ook echt waarde toevoegen voor gebruikers.
+            </p>
+            <p>
+                Deze opleiding biedt mij de perfecte balans tussen theoretische kennis en praktische ervaring, waardoor ik
+                mezelf kan ontwikkelen tot een veelzijdige creative professional die zowel kan ontwerpen als ontwikkelen.
+            </p>
+        </div>
+
+        <!-- Why Good Designer -->
+        <div class="about-highlight">
+            <div class="highlight-header">
+                <div class="highlight-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+                <h3>Waarom ben ik een goede designer?</h3>
+            </div>
+
+            <div class="highlight-content">
+                <h4>Als Designer</h4>
+                <ul>
+                    <li>Sterke focus op gebruiksvriendelijkheid en toegankelijkheid</li>
+                    <li>Aandacht voor typografie, kleurgebruik en compositie</li>
+                    <li>Vermogen om complexe informatie visueel begrijpelijk te maken</li>
+                    <li>Altijd op zoek naar innovatieve en creatieve oplossingen</li>
+                </ul>
+            </div>
+
+            <div class="highlight-quote">
+                <p>
+                    "Mijn passie voor design stelt me in staat om projecten te realiseren die niet alleen mooi zijn,
+                    maar ook perfect aansluiten bij de behoeften van de gebruiker. Ik begrijp de creatieve uitdagingen
+                    en kan ze omzetten in prachtige visuele oplossingen."
+                </p>
+            </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="hobbies">
+            <h3>Mijn Hobby's</h3>
+            <div class="hobby-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🏐</div>
+                    <h4>Volleybal</h4>
+                    <p>Teamwork en doorzettingsvermogen op het veld</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎵</div>
+                    <h4>Muziek</h4>
+                    <p>Creativiteit en inspiratie door verschillende genres</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2>Mijn Projecten</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                Een selectie van school- en persoonlijke projecten die mijn vaardigheden en groei tonen
+            </p>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <button class="category-btn active" data-category="all">Alle</button>
+            <button class="category-btn" data-category="Web Design">Web Design</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+            <!-- Pizza Take Away Project -->
+            <div class="project-card" data-category="Web Design">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&h=600&fit=crop" alt="Pizza Take Away Website">
+                    <span class="project-badge">School</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-category">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                        </svg>
+                        <span>Web Design</span>
+                    </div>
+                    <h3>Pizza Take Away Website</h3>
+                    <div class="project-course">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span>Vak: Webdesign & Development</span>
+                    </div>
+                    <p class="project-description">
+                        Een volledig functionele pizza take away website waar klanten online pizza kunnen bestellen.
+                    </p>
+                    <div class="project-details">
+                        <h4>Details:</h4>
+                        <p>
+                            Dit project was een complete bestelwebsite voor een pizzeria. De website bevat een menuoverzicht
+                            met verschillende pizza's, toppings, en drankjes, een winkelwagenfunctie, en een bestelformulier.
+                            Klanten kunnen pizza's kiezen, toppings toevoegen, hoeveelheden aanpassen, en hun bestelling plaatsen.
+                        </p>
+                    </div>
+                    <div class="project-details">
+                        <h4>Mijn rol:</h4>
+                        <p>
+                            Ik heb de volledige website ontwikkeld van begin tot eind. Dit omvatte het opzetten van de HTML structuur
+                            voor alle pagina's (homepage, menu, winkelwagen, checkout), het stylen met CSS voor een aantrekkelijke en
+                            gebruiksvriendelijke interface met pizza thema, en het implementeren van alle interactieve functionaliteiten
+                            met JavaScript zoals de winkelwagen, totaalberekening, topping selectie, en het bestelproces.
+                        </p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-year">2026</span>
+                        <a href="#" class="project-link">
+                            Bekijk project
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Mijn Vaardigheden</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                Technische vaardigheden en tools die ik beheers
+            </p>
+        </div>
+
+        <div class="skills-grid">
+            <!-- HTML -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-name">HTML</span>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70"></div>
+                </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-name">CSS</span>
+                    <span class="skill-percentage">60%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="60"></div>
+                </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percentage">60%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="60"></div>
+                </div>
+            </div>
+
+            <!-- Adobe Photoshop -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-name">Adobe Photoshop</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80"></div>
+                </div>
+            </div>
+
+            <!-- Adobe Illustrator -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-name">Adobe Illustrator</span>
+                    <span class="skill-percentage">65%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="65"></div>
+                </div>
+            </div>
+
+            <!-- Figma -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-name">Figma</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="85"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2>Neem Contact Op</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                Heb je een vraag of wil je samenwerken? Stuur me een bericht!
+            </p>
+        </div>
+
+        <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Naam</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Onderwerp</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Bericht</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                    Verstuur Bericht
+                </button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Volg Mij</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        Instagram
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                        Facebook
+                    </a>
+                </div>
+
+                <div class="contact-details">
+                    <h4>Contact Informatie</h4>
+                    <p>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        jane.doe@email.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Jane Doe. Alle rechten voorbehouden.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
